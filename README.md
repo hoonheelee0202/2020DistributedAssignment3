@@ -5,6 +5,19 @@
 ## System Diagram - No structural change from Assignment2
 ![SystemDiagram](SystemDiagramV3.png)
 
+## Main implementation point
+**Zookeeper Topic Node**
+
+- Whenever new topic is registered Zookeeper topic node is created and stores the identity of the publisher
+
+![TopicNodeRegistered](TopicNodeRegistered.png)
+
+- When a publisher dies its topic node disappears from Zookeeper 
+  and the candidate node become the leader publisher who can send the topic contents
+  
+![LeaderChange](LeaderChange.png)
+
+
 ## How to Execute
 **0. Prerequirement**
  - Mysql Database

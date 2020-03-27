@@ -116,7 +116,7 @@ $ python3 pubsubgen.py I 5 10 20 Y
   
  ## Time measurement
  
-No change from Assignment 2 because basic structure of the program didn't change. 
+No change from Assignment 2 because basic structure of the program is exactly the same.
 
  * Broker Communication
 ![TimeMeasurement](TimeMeasurement1.png)

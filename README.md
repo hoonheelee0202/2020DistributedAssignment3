@@ -10,12 +10,12 @@
 
 - Whenever new topic is registered Zookeeper topic node is created and stores the identity of the publisher
 
-![TopicNodeRegistered](TopicNodeRegistered.png)
+![TopicNodeRegistered](TopicNodeRegistered2.png)
 
 - When a publisher dies its topic node disappears from Zookeeper 
   and the candidate node become the leader publisher who can send the topic contents
   
-![LeaderChange](LeaderChange.png)
+![LeaderChange](LeaderChange2.png)
 
 
 ## How to Execute

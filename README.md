@@ -30,7 +30,7 @@
  delete 'broker' node if exists
  - [zk: localhost:2181(CONNECTED) 0] deleteall /broker
  ```diff
-- Different from Assighment 2
+** Different from Assighment 2
  delete 'topic' node if exists
  - [zk: localhost:2181(CONNECTED) 0] deleteall /topic
  ```
@@ -76,39 +76,20 @@ $ python3 pubsubgen.py I 5 10 20 Y
   --> Output : broker_command.txt, publisher_command.txt, subscriber_command.txt
  
  ## Demo Screenshots
-  1. Broker starts : start 2 brokers
- ![Broker starts](1.png)
+  1. 2Brokers, 1 subscriber, 2 publishers start
+ ![Starts](1.png)
  
  
  
-  2. Subscribers start : start 2 subscribers
-  ![Subscribers start](2.png)
+  2. Zookeeper Topic Node for ownership
+  ![Ownership change](2.png)
   
   
   
-  3. Publisher starts : start 1 publisher
-  ![Publisher start](3.png)
+  3. Check Publishing publisher change : Database
+  ![Database check](3.png)
   
-  
-  4. publisher publishes : publisher send a content
-  ![Publisher published](4.png)
-  
-  
-  
-  5. Broker die1/3 : Zookeeper notification 
-  ![Broker die1](5.png)
-  
-  
-  
-    6. Broker die2/3 : Zookeeper leader change
-  ![Broker die2](6.png)
-  
-  
-  
-    5. Broker die3/3 : different broker starts working(evidenced by the DB transaction record)
-  ![Broker die3](7.png)
-  
- 
+
  
  ## Testing Environment
  
@@ -119,8 +100,8 @@ $ python3 pubsubgen.py I 5 10 20 Y
   
  ## Time measurement
  
- We could get almost the same result as that of assignment #1
- 
+No change from Assignment 2 because basic structure of the program didn't change. 
+
  * Broker Communication
 ![TimeMeasurement](TimeMeasurement1.png)
 

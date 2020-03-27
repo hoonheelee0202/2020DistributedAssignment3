@@ -30,11 +30,10 @@
  delete 'broker' node if exists
  - [zk: localhost:2181(CONNECTED) 0] deleteall /broker
  ```diff
-- text in red
+- Different from Assighment 2
  delete 'topic' node if exists
  - [zk: localhost:2181(CONNECTED) 0] deleteall /topic
  ```
- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
  
  
 **2-1. Publisher to Subscribers using Broker**

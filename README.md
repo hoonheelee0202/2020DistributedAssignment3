@@ -29,8 +29,11 @@
  - $ zkCli.sh
  delete 'broker' node if exists
  - [zk: localhost:2181(CONNECTED) 0] deleteall /broker
+ ```diff
+- text in red
  delete 'topic' node if exists
  - [zk: localhost:2181(CONNECTED) 0] deleteall /topic
+ ```
  
  
 **2-1. Publisher to Subscribers using Broker**

@@ -76,12 +76,15 @@ $ python3 pubsubgen.py I 5 10 20 Y
   --> Output : broker_command.txt, publisher_command.txt, subscriber_command.txt
  
  ## Demo Screenshots
+ 
   1. 2Brokers, 1 subscriber, 2 publishers start
+  
  ![Starts](1.png)
  
  
  
   2. Zookeeper Topic Node for ownership
+  
   ![Ownership change](2.png)
   
   
